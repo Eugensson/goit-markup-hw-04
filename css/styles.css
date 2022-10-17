@@ -144,7 +144,6 @@ body {
 .navigation-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .nav-list,
@@ -152,7 +151,7 @@ body {
   display: flex;
 }
 
-.nav-list {
+.navigation {
   margin-left: 93px;
 }
 
@@ -167,8 +166,7 @@ body {
 
 .nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 
   font-weight: 500;
   font-size: 14px;
@@ -286,14 +284,11 @@ body {
 
 .preference-list {
   display: flex;
+  gap: 30px;
 }
 
 .preference-item {
   width: calc((100%-90px) / 4);
-}
-
-.preference-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .preference-subtitle {
@@ -331,8 +326,11 @@ body {
 
 .activity-list {
   display: flex;
-  width: calc((100%-60) / 3);
   gap: 30px;
+}
+
+.activity-item {
+  width: calc((100%-60px) / 3);
 }
 
 /* Section Team */
@@ -347,7 +345,7 @@ body {
 }
 
 .team-card {
-  width: calc((100%-90) / 4);
+  width: calc((100%-90px) / 4);
   background-color: var(--primary-background-color);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
@@ -459,10 +457,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.filter-item:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .portfolio-list {
@@ -489,6 +484,7 @@ body {
 .portfolio-items {
   padding: 20px 24px;
   border: 1px solid var(--portfolio-border-elements-color);
+  border-top: 0;
 }
 
 .portfolio-subtitle {
