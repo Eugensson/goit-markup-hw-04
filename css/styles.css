@@ -477,7 +477,12 @@ body {
   margin-bottom: 30px;
 }
 
-.portfolio-card:hover {
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: var(--portfolio-elements-shadow);
 }
 
